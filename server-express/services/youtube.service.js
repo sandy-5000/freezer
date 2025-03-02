@@ -3,7 +3,7 @@ import { google } from 'googleapis'
 import credentials from '#~/config'
 import { ERRORS } from '#~/utils/error.types'
 
-class YouTubeService {
+export default class YouTubeService {
   static getYouTubeClient = () => {
     const oauth2Client = new google.auth.OAuth2(
       credentials.web.client_id,
@@ -50,5 +50,3 @@ class YouTubeService {
     return videoId
   }
 }
-
-export default YouTubeService

@@ -4,6 +4,7 @@
 /build
 package-lock.json
 .env
+credentials.json
 
 # Logs
 logs
